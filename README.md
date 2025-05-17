@@ -1,12 +1,28 @@
-# React + Vite
+# API Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that fetches and visualizes the data in a tabular form any public API returning an array of objects. The user can input any public API URL and the app will dynamically render the data in a table.
 
-Currently, two official plugins are available:
+## Live Demo
+- Vercel Link: https://api-visualizer-mu.vercel.app
+- Github Link: https://github.com/kartik914/api-visualizer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Input any valid API URL to the input field
+- Auto detects the column based on the JSON structure
+- Nested objects flattered for display
+- Sorting, filtering and pagination (Using AG Grid)
+- Error handling for invalid URLs and invalid data formats
 
-## Expanding the ESLint configuration
+## How to run locally
+- Clone the Repositry
+  ```bash
+  git clone https://github.com/kartik914/api-visualizer.git
+  cd api-visualizer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Install the dependencies
+  ```bash
+  npm install
+
+- Start development server
+  ```bash
+  npm run dev
